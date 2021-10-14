@@ -1,3 +1,5 @@
+//Arthur Voltolini
+
 import java.util.Scanner;
 
 public class DecimalParaBinario {
@@ -5,7 +7,7 @@ public class DecimalParaBinario {
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Digite um número: ");
+        System.out.println("Digite um número Decimal: ");
         int numero = sc.nextInt();
 
         ConverterBinario converter = new ConverterBinario();
