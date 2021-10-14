@@ -1,5 +1,3 @@
-//Arthur Voltolini
-
 public class ConverterBinario {
 
     public String binario(int decimal) {
