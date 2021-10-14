@@ -1,3 +1,5 @@
+//Arthur Voltolini
+
 import java.util.Scanner;
 
 public class DecimalParaBinario {
