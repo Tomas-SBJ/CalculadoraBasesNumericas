@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/Calculadora/Calculadora.iml" filepath="$PROJECT_DIR$/Calculadora/Calculadora.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/CalculadoraBasesNumericas.iml" filepath="$PROJECT_DIR$/.idea/CalculadoraBasesNumericas.iml" />
       <module fileurl="file://$PROJECT_DIR$/OperacoesBinarias/OperacoesBinarias.iml" filepath="$PROJECT_DIR$/OperacoesBinarias/OperacoesBinarias.iml" />
+      <module fileurl="file://$PROJECT_DIR$/OperacoesHexadecimais/OperacoesHexadecimais.iml" filepath="$PROJECT_DIR$/OperacoesHexadecimais/OperacoesHexadecimais.iml" />
     </modules>
   </component>
 </project>
