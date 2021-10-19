@@ -1,18 +1,21 @@
 //Arthur Voltolini
 
-import java.util.Scanner;
-
 public class DecimalParaBinario {
-    public static void main(String[] args) {
 
-        Scanner sc = new Scanner(System.in);
+    public static String converter(int decimal)
+    {
+        int numero = decimal;
+        String binario = "";
+        String binarioInverso = "";
 
-        System.out.println("Digite um número: ");
-        int numero = sc.nextInt();
+        while (numero != 0) {
+            binario += "" + numero % 2;
+            numero = numero / 2;
+        }
 
-        ConverterBinario converter = new ConverterBinario();
-
-        System.out.println("Binário: " + converter.binario(numero));
+        for (int i = (binario.length()); i != 0; i--) {
+            binarioInverso += "" + binario.charAt(i - 1);
+        }
+        return binarioInverso;
     }
-
 }

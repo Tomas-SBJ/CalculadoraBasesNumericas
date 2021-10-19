@@ -3,7 +3,8 @@
  *
  * @author Anthony de Zutter
  */
-public class HexadecimalParaDecimal {
+public class HexadecimalParaDecimal
+{
 
     public static long converter(String hex) {
         hex = hex.toUpperCase();

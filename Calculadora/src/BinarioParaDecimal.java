@@ -2,7 +2,8 @@ public class BinarioParaDecimal {
 
     //Gabriel Puziski Machado
 
-    public static int converterBinarioDecimal(int binario ){
+    public static int converter(int binario)
+    {
         int i = 1, decimal = 0, memoria = 0;
         while(binario!=0){
             memoria = binario % 10;
@@ -11,6 +12,7 @@ public class BinarioParaDecimal {
             binario = binario/10;
 
         }
+
         return decimal;
     }
 }
