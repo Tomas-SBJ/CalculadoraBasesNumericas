@@ -107,7 +107,7 @@ public class Application {
                             """);
                     opcaoNumero = teclado.nextInt();
 
-                    if (opcaoNumero != 1 && opcaoNumero != 2 && opcaoNumero != 3) {
+                    if (opcaoNumero != 1 && opcaoNumero != 2 && opcaoNumero != 3 && opcaoNumero != 4 && opcaoNumero != 5 && opcaoNumero != 6) {
                         throw new IllegalArgumentException("Opção de ordem dos números inserido é invalida.");
                     }
 
@@ -242,7 +242,7 @@ public class Application {
 
                                     numeroBinarioConvertidoParaDecimal = BinarioParaDecimal.converter(numeroBinario);
 
-                                    resultadoDecimal = numeroBinarioConvertidoParaDecimal - numeroDecimal;
+                                    resultadoDecimal = numeroDecimal - numeroBinarioConvertidoParaDecimal;
 
                                     resultadoBinario = DecimalParaBinario.converter(resultadoDecimal);
                                     resultadoHexadecimal = DecimalParaHexa.converter(resultadoDecimal);
@@ -261,7 +261,7 @@ public class Application {
 
                                     numeroHexadecimalConvertidoParaDecimal = HexadecimalParaDecimal.converter(numeroHexa);
 
-                                    resultadoDecimal = numeroHexadecimalConvertidoParaDecimal - numeroDecimal;
+                                    resultadoDecimal = numeroDecimal - numeroHexadecimalConvertidoParaDecimal;
 
                                     resultadoBinario = DecimalParaBinario.converter(resultadoDecimal);
                                     resultadoHexadecimal = DecimalParaHexa.converter(resultadoDecimal);
@@ -281,7 +281,7 @@ public class Application {
                                     numeroHexadecimalConvertidoParaDecimal = HexadecimalParaDecimal.converter(numeroHexa);
                                     numeroBinarioConvertidoParaDecimal = BinarioParaDecimal.converter(numeroBinario);
 
-                                    resultadoDecimal = numeroBinarioConvertidoParaDecimal - numeroHexadecimalConvertidoParaDecimal;
+                                    resultadoDecimal = numeroHexadecimalConvertidoParaDecimal - numeroBinarioConvertidoParaDecimal;
 
                                     resultadoBinario = DecimalParaBinario.converter(resultadoDecimal);
                                     resultadoHexadecimal = DecimalParaHexa.converter(resultadoDecimal);
@@ -595,5 +595,6 @@ public class Application {
             loop = teclado.next().toUpperCase();
 
         } while(loop.equals("SIM"));
+
     }
 }
