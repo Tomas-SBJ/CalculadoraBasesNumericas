@@ -42,7 +42,7 @@ public class Application {
                         """);
                 opcaoConverter = teclado.nextInt();
 
-                if (opcaoConverter != 1 && opcaoConverter != 2 && opcaoConverter != 3 && opcaoConverter != 4) {
+                if (opcaoConverter < 1 || opcaoConverter > 4) {
                     throw new IllegalArgumentException("Opção de conversão inserida é invalida.");
                 }
 
@@ -91,7 +91,7 @@ public class Application {
                         """);
                 opcaoCalcular = teclado.nextInt();
 
-                if (opcaoCalcular != 1 && opcaoCalcular != 2 && opcaoCalcular != 3 && opcaoCalcular != 4) {
+                if (opcaoCalcular < 1 || opcaoCalcular > 4) {
                     throw new IllegalArgumentException("Opção de conversão inserida é invalida.");
                 }
 
@@ -106,8 +106,7 @@ public class Application {
                         """);
                 opcaoNumero = teclado.nextInt();
 
-                if (opcaoNumero != 1 && opcaoNumero != 2 && opcaoNumero != 3 && opcaoNumero != 4 && opcaoNumero != 5
-                        && opcaoNumero != 6) {
+                if (opcaoNumero < 1 || opcaoNumero > 6) {
                     throw new IllegalArgumentException("Opção de ordem dos números inserido é invalida.");
                 }
 
